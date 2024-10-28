@@ -59,25 +59,25 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4 px-4">
                 <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-                    <img src="images/features/hotel.svg" width="70px">
+                    <img src="images/about/hotel.svg" width="70px">
                     <h4 class="mt-3">100+ ROOMS</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4 px-4">
                 <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-                    <img src="images/features/customers.png" width="70px">
+                    <img src="images/about/customers.png" width="70px">
                     <h4 class="mt-3">200+ CUSTOMERS</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4 px-4">
                 <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-                    <img src="images/features/rating.png" width="70px">
+                    <img src="images/about/rating.png" width="70px">
                     <h4 class="mt-3">150+ REVIEWS</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4 px-4">
                 <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-                    <img src="images/features/staffs.png" width="70px">
+                    <img src="images/about/staffs.png" width="70px">
                     <h4 class="mt-3">200+ STAFFS</h4>
                 </div>
             </div>
@@ -91,31 +91,31 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper mb-5">
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/features/koong.jpg" class="w-100">
+                    <img src="images/about/koong.jpg" class="w-100">
                     <h5 class="mt-2">PHOMMASENG EKALAT</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/features/alam.jpg" class="w-100">
+                    <img src="images/about/koong.jpg" class="w-100">
                     <h5 class="mt-2">SONELAM</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/features/abin.jpg" class="w-100">
+                    <img src="images/about/koong.jpg" class="w-100">
                     <h5 class="mt-2">SHUBIN</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/features/aluzer.jpg" class="w-100">
+                    <img src="images/about/koong.jpg" class="w-100">
                     <h5 class="mt-2">LUZER</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/features/akhim.jpg" class="w-100">
+                    <img src="images/about/koong.jpg" class="w-100">
                     <h5 class="mt-2">KHIMSAMONE</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/features/ager.jpg" class="w-100">
+                    <img src="images/about/koong.jpg" class="w-100">
                     <h5 class="mt-2">GER14K</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/features/bank.jpg" class="w-100">
+                    <img src="images/about/koong.jpg" class="w-100">
                     <h5 class="mt-2">BANK</h5>
                 </div>
             </div>
