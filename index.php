@@ -34,43 +34,25 @@
 
 <body class="bg-light">
 
-        <?php require('inc/header.php')?>
+    <?php require('inc/header.php') ?>
 
     <!-- PMSHotel -->
 
     <div class="container-fluid px-lg-4 mt-4">
         <div class="swiper swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/hotel/a.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/b.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/c.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/d.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/e.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/f.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/g.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/h.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/i.jpg" class="w-100 d-block">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/hotel/d.jpg" class="w-100 d-block">
-                </div>
+                <?php
+                $res = selectAll('pms');
+                while ($row = mysqli_fetch_assoc($res)) {
+                    $path = PMSHOTEL_IMG_PATH;
+                    echo <<<data
+                        <div class="swiper-slide">
+                            <img src="$path$row[image]" class="w-100 d-block">
+                        </div>
+                    data;
+                }
+
+                ?>
             </div>
         </div>
     </div>
@@ -448,20 +430,20 @@
                     </a>
                     <br>
                     <?php
-                        if($contact_r['pn2']!=''){
-                            echo<<<data
+                    if ($contact_r['pn2'] != '') {
+                        echo <<<data
                             <a href="tel: +$contact_r[pn2]" class="d-inline-block mb-2 text-decoration-none text-dark">
                                 <i class="bi bi-telephone-inbound-fill"></i> +$contact_r[pn2]
                             </a>
                             data;
-                        }
+                    }
                     ?>
                 </div>
                 <div class="bg-white p-4 rounded mb-4">
                     <h5>Follow us</h5>
                     <?php
-                        if($contact_r['tw']!=''){
-                            echo<<<data
+                    if ($contact_r['tw'] != '') {
+                        echo <<<data
                             <a href="$contact_r[tw]" class="d-inline-block mb-3 ">
                             <span class="badge bg-light text-dark fs-6 p-2">
                             <i class="bi bi-twitter me-1"></i>Twitter
@@ -471,7 +453,7 @@
                         data;
                     }
                     ?>
-                    
+
                     <a href="<?php echo $contact_r['fb'] ?>" class="d-inline-block mb-3 ">
                         <span class="badge bg-light text-dark fs-6 p-2">
                             <i class="bi bi-facebook me-1"></i>Facebook
@@ -499,7 +481,7 @@
         var swiper = new Swiper(".swiper-container", {
             spaceBetween: 30,
             effect: "fade",
-            LOOP: true,
+            loop: true,
             autoplay: {
                 delay: 3500,
                 disableOnInteraction: false,

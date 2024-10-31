@@ -4,12 +4,14 @@
 
 define('SITE_URL','http://127.0.0.1/EKALAT_PMS/');
 define('ABOUT_IMG_PATH',SITE_URL.'images/about/');
+define('PMSHOTEL_IMG_PATH',SITE_URL.'images/pms/');
 
 
 // backend upload process needs this data
 
 define('UPLOAD_IMAGE_PATH',$_SERVER['DOCUMENT_ROOT'] .'/EKALAT_PMS/images/');
 define('ABOUT_FOLDER','about/');
+define('PMSHOTEL_FOLDER','pms/');
 
 
 
