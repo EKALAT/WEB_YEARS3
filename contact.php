@@ -37,13 +37,7 @@
         </p>
     </div>
 
-
-    <?php
-        $contact_q = "SELECT * FROM `contact_details` WHERE `sr_no`=?";
-        $values = [1];
-        $contact_r = mysqli_fetch_assoc(select($contact_q,$values,'i'));
-    ?>
-
+    
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 mb-5 px-4">
@@ -78,7 +72,7 @@
                     <a href="mailto: <?php echo $contact_r['email']?>" class="d-inline-block mb-2 text-decoration-none text-dark"><i class="bi bi-envelope-fill"></i> <?php echo $contact_r['email']?>
                     </a>
 
-                    <h5 class="mt-4">Follow us</h5>
+                    <h5 class="mt-4">Follow us</h5> 
                     <?php
                         if($contact_r['tw']!=''){
                             echo<<<data
