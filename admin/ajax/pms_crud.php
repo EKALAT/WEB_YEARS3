@@ -6,7 +6,7 @@ adminLogin();
 
 if (isset($_POST['add_image'])) {
 
-    $img_r = uploadImage($_FILES['picture'], PMSHOTEL_FOLDER);
+    $img_r = uploadImage($_FILES['picture'],PMSHOTEL_FOLDER);
 
     if ($img_r == 'inv_img') {
         echo $img_r;
@@ -15,8 +15,8 @@ if (isset($_POST['add_image'])) {
     } else if ($img_r == 'upd_failed') {
         echo $img_r;
     } else {
-        $q = "INSERT INTO `team_details`(`name`, `picture`) VALUES (?,?)";
-        $values = [$frm_data['name'], $img_r];
+        $q = "INSERT INTO `pms`(`image`) VALUES (?)";
+        $values = [$img_r];
         $res = insert($q, $values, 's');
         echo $res;
     }
